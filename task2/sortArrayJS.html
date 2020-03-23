@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sortingArray(arr) {
+        let sortArr = [];
+        let pos = 0,
+          max = arr[0],
+          min = arr[0];
+        // max number
+        for (let i = 0; i < arr.length; i++) {
+          if (max < arr[i]) {
+            max = arr[i];
+          }
+        }
+        // min number
+        for (let j = 0; j < arr.length; j++) {
+          for (let k = 0; k < arr.length; k++) {
+            if (arr[k] != null) {
+              if (min > arr[k]) {
+                min = arr[k];
+                pos = k;
+              }
+            }
+          }
+          console.log(min);
+          sortArr[j] = min;
+          arr[pos] = null;
+          min = max;
+        }
+        return sortArr;
+      }
+      let arr = [1, 5, 10, 52, 541, 10];
+      console.log(arr, "start");
+      console.log(sortingArray(arr), "end");
+    </script>
+  </body>
+</html>

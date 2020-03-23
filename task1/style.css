@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(240, 238, 238);
+}
+.log {
+  width: 400px;
+  height: 300px;
+  background: rgb(134, 132, 170);
+  background: linear-gradient(0deg, rgba(134, 132, 170, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  box-shadow: 0 0 10px rgba(134, 132, 170, 0.8);
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+}
+label {
+  font-weight: 700;
+  font-size: 18px;
+}
+input {
+  width: 200px;
+  height: 35px;
+}
+select {
+  width: 80px;
+  height: 40px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: seagreen;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgb(48, 47, 47);
+}
+
+form {
+  padding: 15px;
+}
+
+#result {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+::-webkit-input-placeholder {
+  padding-left: 10px;
+}
